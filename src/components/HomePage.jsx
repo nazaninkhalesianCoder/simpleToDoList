@@ -27,7 +27,12 @@ const HomePage = () => {
 
   const toggleCheck = (index) => {
     const newList = [...Tasklist];
-    newList[index].done = !newList[index].done;
+
+    // اجازه فقط یک‌بار تیک خوردن
+    if (!newList[index].done) {
+      newList[index].done = true;
+    }
+
     setTaskList(newList);
   };
 
@@ -50,7 +55,11 @@ const HomePage = () => {
             className={`flex gap-10 text-2xl font-bold text-blue-900 
             ${task.done ? "line-through text-gray-500" : ""}`}
           >
-            <Checkbox checked={task.done} onChange={() => toggleCheck(index)} />
+            <Checkbox
+              checked={task.done}
+              onChange={() => toggleCheck(index)}
+              disabled={task.done} // چک‌باکس بعد از تیک شدن غیرفعال می‌شود
+            />
 
             <span>Title:</span>
             <span className="font-semibold text-blue-400">{task.title}</span>
