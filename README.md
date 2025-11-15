@@ -1,16 +1,110 @@
-# React + Vite
+ToDoList App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and functional React project demonstrating task management, controlled components, state updates, and UI behavior using React, TailwindCSS, and Material UI.
+This app allows users to add tasks, mark them as completed (with a one-way check), and delete tasks — all inside a simple, responsive interface.
 
-Currently, two official plugins are available:
+🚀 About the Project
+This project is built to practice and showcase core frontend skills including:
+Managing state with useState
+Handling input fields as controlled components
+Updating arrays immutably
+Rendering dynamic lists
+Using Material UI components (Checkbox & Icons)
+Styling with TailwindCSS
+The app provides three main actions:
+➕ Add Task
+Users can type a task and add it. The input clears automatically after adding.
+✔️ Mark as Completed (One-Way Check)
+A task can be checked only once.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+After checking:
+The text becomes line-through
+The item fades using opacity
+The entire task becomes disabled
+The checkbox cannot be unchecked again
 
-## React Compiler
+🗑️ Delete Task
+Each task can be removed using a Material UI Delete icon.
+This demonstrates clean component logic, UI feedback, and state-driven rendering.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+🧠 What You Will Learn
+How to manage arrays of objects using useState
+How to build controlled input components
+How to update individual items inside state
+Using Material UI icons & components
+Styling UI with TailwindCSS utility classes
+Clean component structure and reusable patterns
+Handling conditional rendering based on state (done === true)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+📁 Project Structure
+
+ToDoList/
+│── src/
+│   │── components/
+│   │   │── HomePage.jsx
+│   │   │── Btn.jsx
+│   │   │── Input.jsx
+│   │── App.jsx
+│   │── index.css
+│   │── main.jsx
+│── public/
+│── package.json
+└── README.md
+
+
+
+
+⚙️ Installation & Setup
+1.Clone the repository:
+git clone https://github.com/YourUsername/ToDoList.git
+
+2.Navigate into the project:
+cd ToDoList
+
+
+3.Install dependencies:
+npm install
+
+
+4.Start the development server:
+npm run dev
+
+
+🖥️ Preview
+The app displays:
+A text input to type new tasks
+A button to add the task
+A dynamic list of items showing:
+Material UI Checkbox
+Task title
+Material UI Delete icon
+Once checked:
+The task fades
+Text becomes crossed-out
+The checkbox becomes disabled
+The entire task becomes non-interactive
+All updates happen instantly using React state.
+
+
+🧩 Tech Stack
+React
+JavaScript (ES6+)
+TailwindCSS
+Material UI (Checkbox + Icons)
+Vite
+
+
+🌟 Why This Project Matters
+This project is small, but it clearly demonstrates:
+Solid understanding of React fundamentals
+Component-based architecture
+Clean and readable logic
+Ability to work with external UI libraries (MUI)
+Real-time, interactive UI behavior
+Handling state changes and rendering efficiently
+Perfect for showcasing your frontend development fundamentals to recruiters and employers.
+
+📬 Contact
+If you'd like to see more of my work or collaborate, feel free to reach out through my GitHub!
