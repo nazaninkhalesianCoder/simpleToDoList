@@ -1,4 +1,4 @@
-ToDoList App
+Simple ToDoList App
 
 A clean and functional React project demonstrating task management, controlled components, state updates, and UI behavior using React, TailwindCSS, and Material UI.
 This app allows users to add tasks, mark them as completed (with a one-way check), and delete tasks — all inside a simple, responsive interface.
